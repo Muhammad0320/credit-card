@@ -1,0 +1,169 @@
+.inputs{
+
+    grid-column: 2 / -1;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    margin-left: 20rem;
+
+
+    
+    
+
+}
+.form{
+
+    display: flex;
+    flex-direction: column;
+    height: 35rem;
+    justify-content: space-between;
+    // align-items: center;
+
+
+}
+
+
+
+.label{
+
+    font-size: 1.5rem;
+    position: relative;
+    margin-bottom: 1rem;
+    color: hsl(278, 68%, 11%);
+    margin-top: 2rem;
+    padding: 1rem 0;
+
+
+
+
+}
+
+
+.error{
+
+    color: hsl(0, 100%, 66%);
+    
+    font-size: 1.2rem;
+   
+
+}
+
+.input{
+
+    width: 90%;
+    height: 3rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    padding: 8px 1rem;
+    border-radius: 5px;
+    color: hsl(278, 68%, 11%);
+    caret-color: currentColor;
+    border:1px solid hsl(270, 3%, 87%);
+    
+
+    &:focus{
+
+        border:1px solid hsl(270, 3%, 87%);
+
+
+    }
+
+    &:valid{
+
+        border: 2px solid;
+        border-image: linear-gradient(to right, rgb(100, 72, 254), rgb(96, 5, 148));
+
+    }
+
+ 
+
+
+
+    &::-webkit-input-placeholder{
+
+        font-size: 1.4rem;
+        color: hsl(270, 3%, 87%);
+        font-weight: 500;
+
+    }
+
+
+
+}
+
+.invalid{
+
+    border: 2px solid hsl(0, 100%, 66%);
+
+}
+
+
+
+.back{
+
+    display: grid;
+    width: 95%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2rem 4rem;
+    justify-content: space-between;
+    align-items: end;
+    align-content: end;
+    grid-gap: 1rem;
+    
+
+
+  
+
+}
+
+.confirm{
+
+    padding: 1rem 0; 
+    background-color: hsl(278, 68%, 11%);
+    color:  hsl(270, 3%, 87%);
+    margin-top: 3rem;
+    width: 90%;
+    cursor: pointer;
+
+}
+
+.label__exp{
+
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+   margin-bottom: -1rem;
+
+}
+
+  .month{
+
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      position: relative;
+        
+
+    }
+
+    .error__date{
+
+        position: absolute;
+        transform: translateY(.2rem);
+
+    }
+
+    .year{
+
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+          
+  
+      }
+
+    .cvc{
+
+        grid-column: 3  / -1;
+        grid-row: 2 / 3;
+
+    }

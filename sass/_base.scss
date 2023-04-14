@@ -1,0 +1,44 @@
+*{
+
+    &,
+    &::after,
+    &::before{
+
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+
+    }
+    
+}
+
+html{
+
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+}
+
+body{
+
+    font-size: 1.4rem;
+    font-weight: 400;
+    display: grid;
+    justify-content: center;
+    font-family: 'Space Grotesk', sans-serif;
+    align-items: center;
+    height: 100vh;
+    
+
+}
+
+.container{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 60rem;
+    width: 90rem;
+    box-shadow: 0 2rem 3rem rgba(#000, .3);
+
+
+}

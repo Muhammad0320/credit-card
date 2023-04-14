@@ -1,0 +1,92 @@
+.card{
+
+    grid-column: 1 / 2;
+    background-image: url("/bg-main-desktop.png");
+    background-size: cover;
+    // width: 120%;
+
+
+    &__front{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        background-image: url("/bg-card-front.png");
+        border-radius: .6rem;
+        background-size: cover;
+        transform: translate(8rem, 12rem);
+        margin-bottom: 3rem;
+        padding: 2rem;
+        height: 16rem;
+        color: white;
+
+
+
+        .img__logo{
+
+            // margin-bottom: auto;
+            height: 3rem;
+            width: 5.4rem;
+            // font-size: 14rem;
+            
+        }
+
+    }
+
+    &__number{
+
+        align-self: stretch;
+        word-spacing: 1rem;
+        letter-spacing: 1.5px;
+        font-size: 1.82rem;
+        margin-bottom: 1rem;
+
+    }
+
+    &__info{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        // align-items: center;
+
+
+
+
+    }
+
+    &__back{
+
+        display: block;
+        background-image: url("/bg-card-back.png");
+        background-size: cover;
+        transform: translate(14rem, 12rem);
+        height: 16rem;
+        border-radius: .6rem;
+        position: relative;
+        
+
+
+
+    }
+
+    &__cvc{
+
+        position: absolute;
+        right: 4rem;
+        color: white;
+        top: 7.5rem;
+
+    }
+
+}
+
+.foot{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -1rem;
+
+}
